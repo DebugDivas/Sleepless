@@ -52,6 +52,10 @@ h6 {
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
+.nonselected {
+  user-select: none;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -646,7 +650,7 @@ h6 {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 80px 0 40px 0;
 }
 
 @media (min-width: 1024px) {
@@ -691,23 +695,30 @@ h6 {
 # Speakers Section
 --------------------------------------------------------------*/
 #speakers {
-  padding: 60px 0 30px 0;
+  padding: 80px 0 40px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  #speakers .container{
+    width: 60%;
+  }
 }
 
 #speakers .speaker {
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
+
 
 #speakers .speaker .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
-  bottom: -40px;
+  bottom: -115px;
   right: 0;
   text-align: center;
-  padding-top: 10px;
+  padding: 40px 0 40px;
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -918,6 +929,12 @@ h6 {
   padding: 60px 0;
 }
 
+@media only screen and (min-width: 1200px) {
+  #venue .cont {
+    width: 91%;
+  }
+}
+
 #venue .container-fluid {
   margin-bottom: 3px;
 }
@@ -1091,13 +1108,11 @@ h6 {
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
 #supporters .supporter-logo {
-  padding: 30px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1106,6 +1121,17 @@ h6 {
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #supporters .supporter-logo {
+    padding: 80px;
+  }
+}
+
+#supporters .supporter-logo img {
+  width: 100%;
 }
 
 #supporters .supporter-logo:hover img {
