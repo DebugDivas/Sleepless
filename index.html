@@ -47,7 +47,9 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <!-- <li><a class="nav-link scrollto" href="#statistics">Statistics</a></li> -->
+            <li>
+              <a class="nav-link scrollto" href="#statistics">Statistics</a>
+            </li>
             <li class="dropdown">
               <a href="#about"
                 ><span>About</span> <i class="bi bi-chevron-down"></i
@@ -55,6 +57,11 @@
               <ul>
                 <li>
                   <a class="nav-link scrollto" href="#about">The project</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="#prototype"
+                    >The prototype</a
+                  >
                 </li>
                 <li>
                   <a class="nav-link scrollto" href="#speakers">The team</a>
@@ -91,7 +98,7 @@
           Detecting drowsiness<br /><span>Saving lives</span>
         </h1>
         <a
-          href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+          href="https://youtu.be/ddK2n5ISdWU"
           class="glightbox play-btn mb-4"
           title="youtube video"
         ></a>
@@ -100,6 +107,91 @@
     <!-- End Hero Section -->
 
     <main id="main">
+      <!-- ======= Statistics Section ======= -->
+      <section id="statistics" class="section-with-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Driving Drowsiness Statistics</h2>
+            <p>What we had in mind when we started this project.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="statistic-box"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h3>70%</h3>
+                <p>Accidents are caused by drowsy driving.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="statistic-box"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>1 in 4</h3>
+                <p>
+                  Drivers have admitted to driving while drowsy, at least once
+                  in the past 30 days.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="statistic-box"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h3>3,500</h3>
+                <p>Fatalities occur annually due to drowsy driving.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="statistic-box"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>00:00 - 06:00</h3>
+                <p>Is the interval in which the most accidents happen.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="statistic-box"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>3 times</h3>
+                <p>More likely to have an accident while driving drowsy.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="statistic-box"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>100 billion dollars</h3>
+                <p>
+                  Is the approximated cost of the crashes annually, which does
+                  not include the cost of property damage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Statistics Section -->
+
       <!-- ======= About Section ======= -->
       <section id="about">
         <div class="container position-relative" data-aos="fade-up">
@@ -113,6 +205,106 @@
               detected, the system activates immediate alerts, such as visual
               cues and audible alarms, to jolt the driver back to alertness.
             </p>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= About Section ======= -->
+      <section id="prototype">
+        <div class="section-header">
+          <h2>The prototype</h2>
+          <p>This is what we came up with</p>
+        </div>
+
+        <div
+          class="row flex-row-reverse flex-md-row align-items-center g-0 cont"
+        >
+          <div
+            class="col-lg-6 img-cont"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="/assets/img/Raspberry.png"
+              alt="image of raspberry pi"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6 justify-content-center p-lg-3 p-md-4 p-sm-5 p-3">
+            <h3>SLEEP<span>LESS</span> PROTOTYPE</h3>
+            <p>
+              Recognizing the alarming statistics associated with accidents
+              caused by fatigue, the invention of Sleepless was driven by a
+              collective commitment to mitigate the risks and consequences of
+              driver drowsiness.
+            </p>
+            <ul>
+              <li>
+                <strong>Features:</strong> Compact Size, High Performance, Low
+                Power Consumption
+              </li>
+              <li>
+                <strong>Connectivity:</strong> Wi-Fi, Bluetooth, GPIO Pins
+              </li>
+              <li>
+                <strong>Applications:</strong> IoT Projects, Home Automation,
+                Robotics
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-12 justify-content-center mt-5">
+          <div class="text-list-title">
+            <h3>WHAT ABOUT THE <span>CODE</span> ?</h3>
+            <p>
+              THE PYTHON SCRIPT UTILIZES THE DLIB, SCIPY, IMUTILS, AND OPENCV
+              LIBRARIES TO DETECT AND ANALYZE FACIAL FEATURES IN A VIDEO STREAM.
+            </p>
+          </div>
+          <div class="text-list">
+            <ul>
+              <li>
+                <strong>1:</strong>    The face detector and facial landmark
+                predictor are initialized using dlib.
+              </li>
+              <li>
+                <strong>2:</strong>    The video stream is started, allowing a
+                short interval for the camera sensor to warm up.
+              </li>
+              <li>
+                <strong>3:</strong>    Key points are established to detect
+                specific facial features (nose, chin, eye corners, and mouth
+                corners), and criteria are defined for actions such as blinking
+                or excessive mouth opening.
+              </li>
+              <li>
+                <strong>4:</strong>     A continuous loop captures frames from the
+                video stream and analyzes facial features in each frame.
+              </li>
+              <li>
+                <strong>5:</strong>     Faces in the video frames are detected, and
+                algorithms are applied to determine their position and
+                dimensions within the image.
+              </li>
+              <li>
+                <strong>6:</strong>     Aspect ratios of the eyes and mouth are
+                calculated, and based on these ratios and other factors (such as
+                the number of eye blinks or the duration of mouth opening),
+                alerts are generated for actions like excessive blinking or
+                prolonged mouth opening.
+              </li>
+              <li>
+                <strong>7:</strong>     Head tilt is detected and measured,
+                generating alerts if the tilt exceeds certain limits for a
+                specified period.
+              </li>
+              <li>
+                <strong>8:</strong>     Results and alerts are displayed within the
+                video stream.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -275,7 +467,7 @@
               </div>
 
               <div class="row schedule-item">
-                <div class="col-md-2"><time>16:00 PM</time></div>
+                <div class="col-md-2"><time>16:00</time></div>
                 <div class="col-md-10">
                   <h4>First problem encountered</h4>
                   <p>
@@ -309,11 +501,10 @@
               <div class="row schedule-item">
                 <div class="col-md-2"><time>21:00</time></div>
                 <div class="col-md-10">
-                  <h4>
-                    More problems
-                  </h4>
+                  <h4>More problems</h4>
                   <p>
-                    We found out that the raspberry pi 4 has some problems with importing the libraries.
+                    We found out that the raspberry pi 4 has some problems with
+                    importing the libraries.
                   </p>
                 </div>
               </div>
@@ -321,11 +512,10 @@
               <div class="row schedule-item">
                 <div class="col-md-2"><time>00:30</time></div>
                 <div class="col-md-10">
-                  <h4>
-                    Site optimization and more problems
-                  </h4>
+                  <h4>Site optimization and more problems</h4>
                   <p>
-                    We made the images in the site smaller for a faster website and worked on the problems that we had with the libraries.
+                    We made the images in the site smaller for a faster website
+                    and worked on the problems that we had with the libraries.
                   </p>
                 </div>
               </div>
@@ -337,9 +527,7 @@
               <div class="row schedule-item">
                 <div class="col-md-2"><time>11:00</time></div>
                 <div class="col-md-10">
-                  <h4>
-                    Started fresh
-                  </h4>
+                  <h4>Started fresh</h4>
                   <p>We came back rested and ready to finish everything</p>
                 </div>
               </div>
@@ -347,21 +535,18 @@
               <div class="row schedule-item">
                 <div class="col-md-2"><time>14:00</time></div>
                 <div class="col-md-10">
-                  <h4>
-                    Took another shot at the problems
-                  </h4>
+                  <h4>Took another shot at the problems</h4>
                   <p>
-                    We started to reinstall everything on the raspberry pi hoping that would fix it.
+                    We started to reinstall everything on the raspberry pi
+                    hoping that would fix it.
                   </p>
                 </div>
               </div>
 
               <div class="row schedule-item">
-                <div class="col-md-2"><time>12:00</time></div>
+                <div class="col-md-2"><time>18:00</time></div>
                 <div class="col-md-10">
-                  <h4>
-                    Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span>
-                  </h4>
+                  <h4>EVRIKA!!</h4>
                   <p>
                     Veniam accusantium laborum nihil eos eaque accusantium
                     aspernatur.
@@ -652,7 +837,10 @@
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                    <p>This site was created using HTML and CSS and pure JavaScript.</p>
+                    <p>
+                      This site was created using HTML and CSS and pure
+                      JavaScript.
+                    </p>
                   </div>
                 </li>
 
