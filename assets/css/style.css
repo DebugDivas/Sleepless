@@ -635,6 +635,17 @@ h6 {
   color: #36a0a0; /* Set the heading color as needed */
 }
 
+@media only screen and (max-width: 768px)
+{
+  #statistics h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  #statistics p {
+    text-align: center;
+  }
+}
+
 #statistics .statistic {
   text-align: center;
 }
